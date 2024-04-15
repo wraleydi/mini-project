@@ -25,8 +25,8 @@ BMI = input('Do you want to measure Body Mass Index (BMI)? (y/n): ')
 if BMI.lower() == 'y':
     while True:
         try:
-            weight = float(input('Enter your weight in kg (e.g., 50): '))
-            height = float(input('Enter your height in meters (e.g., 1.70): '))
+            weight = float(input('Enter your weight in kg (50): '))
+            height = float(input('Enter your height in meters (1.70): '))
             print(BMIcalculator(weight, height))
             break
         except ValueError:
