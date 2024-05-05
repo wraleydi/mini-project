@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.profile-card {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+header .head {
+    display: flex;
+    position: relative;
+    height: 400px;
+    background-image: url('thousand sunny.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -0;
+}
+
+.header-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.555); 
+    z-index: -0; 
+}
+
+.title-img img {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%;
+    border: 3px solid #fff;
+    z-index: 999999;
+}
+
+.title-img h1 {
+    display: flex;
+    position: absolute;
+    color: white;
+    bottom: 3rem; 
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    width: 200px; 
+    justify-content: center;
+    z-index: 999999;
+}
+
+.content {
+    padding: 40px;
+    margin-block-start: 3rem;
+}
