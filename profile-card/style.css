@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family:'Quicksand' ,'Poppins', sans-serif;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -20,7 +20,7 @@ body {
 header .head {
     display: flex;
     position: relative;
-    height: 400px;
+    height: 500px;
     background-image: url('thousand sunny.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
@@ -31,7 +31,7 @@ header .head {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.555); 
+    background-color: rgba(0, 0, 0, 0.705); 
     z-index: -0; 
 }
 
@@ -39,7 +39,7 @@ header .head {
     display: flex;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%) translateY(50%);
+    transform: translateX(-50%) translateY(60%);
     width: 200px; 
     height: 200px; 
     border-radius: 50%;
@@ -51,16 +51,154 @@ header .head {
     display: flex;
     position: absolute;
     color: white;
-    bottom: 3rem; 
+    bottom: 7rem; 
     left: 50%;
     transform: translateX(-50%) translateY(50%);
-    width: 200px; 
+    width: 600px; 
     justify-content: center;
     z-index: 999999;
 }
 
-.content .title h1 {
-    text-align: center;
-    padding-block: 3rem;
+main .info-me {
+    padding: 3.5rem;
+    background-color: rgb(25, 26, 27);
+}
+
+main .content {
+    display: flex;
+    background: rgb(1,3,5);
+    background: linear-gradient(180deg, rgb(25, 26, 27) 30%, rgba(10,52,104,1) 100%); 
+    padding: 3rem;
+    padding-block-start: 6rem;
+    margin-block-start: 0rem;
+    border-radius: 3rem;
+}
+
+main .description-info {
+    padding-inline-start: 3rem;
+}
+
+.description-info p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+.half-underline {
+    position: relative;
+    display: inline-block;
+}
+
+.half-underline::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 3px solid white; /* Ubah warna dan ketebalan sesuai kebutuhan */
+}
+
+.info tr td {
+    padding: 10px;
+    padding-inline-end: 5rem;
+    padding-inline-start: 2rem; 
+}
+
+.info th {
+    text-align: start;
+    color: #83bb4f;
+    font-family: 'Sedan', 'Poppins', sans-serif;
+}
+
+.social ul {
+    display: flex;
+    padding: 0;
     margin: 0;
+    justify-content: center;
+}
+
+.social ul li {
+    list-style: none;
+    margin: 1rem;
+}
+
+.social li a {
+    color: white;
+    font-size: 1.5rem;
+    transition: all ease-in-out 0.2s;
+}
+
+.social li a:hover {
+    color: #83bb4f;
+}
+
+hr {
+    margin-block-start: 3rem;
+    height: 0.4rem;
+    width: 100%;
+    background-color: white;
+    border: none;
+    border-radius: 1rem;
+}
+
+hr.sc {
+    margin-block-start: 0;
+    width: 50%;
+}
+
+hr.thr {
+    margin-block-start: 0;
+    width: 25%;
+}
+
+.my-edu .edu-title h1 {
+    text-align: center;
+    padding-block-start: 5rem;
+}
+
+.edu-title h1 .half-underline::after {
+    width: 130%;
+}
+
+.edu-content {
+    display: flex;
+    padding: 5rem;
+    padding-block-start: 6rem;
+    justify-content: space-between;
+
+}
+
+.edu-content .group {
+    max-width: 450px;
+    background-color: rgba(255, 255, 255, 0.815);
+    box-shadow: -10px 10px 0 rgba(255, 255, 255, 0.712), 10px -10px 0 rgba(255, 255, 255, 0.616);
+    color: rgb(0, 0, 0);
+    padding: 2rem;
+}
+
+.arrow-container {
+    position: relative;
+    width: 200px; 
+    bottom: -10rem;
+}
+
+.line {
+    position: absolute;
+    width: 80%;
+    height: 5px; 
+    background-color: white;
+    left: 1rem;
+    top: -40%;
+    transform: translateY(-50%);
+}
+
+.arrow {
+    position: absolute;
+    top: -40%;
+    right: 1rem; 
+    width: 0;
+    height: 0;
+    border-top: 18px solid transparent; 
+    border-bottom: 18px solid transparent; 
+    border-left: 20px solid white; 
+    transform: translateY(-50%);
 }
