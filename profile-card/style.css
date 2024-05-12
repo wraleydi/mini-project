@@ -156,49 +156,118 @@ hr.thr {
 }
 
 .edu-title h1 .half-underline::after {
+    bottom: -0.5rem;
     width: 130%;
 }
 
 .edu-content {
     display: flex;
+    flex-wrap: wrap;
     padding: 5rem;
-    padding-block-start: 6rem;
+    padding-block-start: 8rem;
+    padding-block-end: 3rem;
     justify-content: space-between;
-
 }
 
 .edu-content .group {
+    flex-basis: 36%;
+    padding: 5rem;
+    margin-inline: 2rem;
+    margin-block: 1rem;
+    margin-block-end: 12rem;
     max-width: 450px;
     background-color: rgba(255, 255, 255, 0.815);
     box-shadow: -10px 10px 0 rgba(255, 255, 255, 0.712), 10px -10px 0 rgba(255, 255, 255, 0.616);
+    border-right: 5px solid #252222;
+    border-bottom: 3px solid #252222;
     color: rgb(0, 0, 0);
     padding: 2rem;
 }
 
 .arrow-container {
-    position: relative;
-    width: 200px; 
-    bottom: -10rem;
+    position: relative; 
+    bottom: 10rem;
+    top: 13rem;
+    left: -0.3rem;
 }
 
 .line {
     position: absolute;
-    width: 80%;
+    width: 140px;
     height: 5px; 
-    background-color: white;
-    left: 1rem;
-    top: -40%;
+    background-color: #00a782;
+    left: -5rem;
+    top: -25%;
     transform: translateY(-50%);
 }
 
 .arrow {
     position: absolute;
-    top: -40%;
-    right: 1rem; 
+    top: -25%;
+    right: -5rem; 
     width: 0;
     height: 0;
     border-top: 18px solid transparent; 
     border-bottom: 18px solid transparent; 
-    border-left: 20px solid white; 
+    border-left: 20px solid #00a782; 
+    transform: translateY(-50%);
+}
+
+.arrow-container-bottom {
+    position: relative;
+    width: 50px; 
+    height: 80px; 
+    top: -23.5rem;
+    left: 74%;
+    z-index: 9999;
+}
+
+.line-bottom {
+    position: absolute;
+    width: 5px; 
+    height: 100%; 
+    background-color: #00a782; 
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.arrow-bottom {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent; 
+    border-right: 15px solid transparent; 
+    border-top: 20px solid #00a782; 
+}
+
+.arrow-container-left {
+    position: relative; 
+    bottom: 13.5rem;
+    right: 3rem;
+}
+
+.line-left {
+    position: absolute;
+    width: 160px;
+    height: 5px; 
+    background-color: #00a782;
+    left: 40rem;
+    top: -25%;
+    transform: translateY(-50%);
+}
+
+.arrow-left {
+    position: absolute;
+    top: -25%;
+    right: 43rem; 
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent; 
+    border-bottom: 15px solid transparent; 
+    border-right: 20px solid #00a782; 
     transform: translateY(-50%);
 }
