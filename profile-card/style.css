@@ -167,10 +167,11 @@ hr.thr {
     padding-block-start: 8rem;
     padding-block-end: 3rem;
     justify-content: space-between;
+    text-align: center;
 }
 
 .edu-content .group {
-    flex-basis: 36%;
+    flex-basis: 35%;
     padding: 5rem;
     margin-inline: 2rem;
     margin-block: 1rem;
@@ -187,7 +188,7 @@ hr.thr {
 .arrow-container {
     position: relative; 
     bottom: 10rem;
-    top: 13rem;
+    top: 15.5rem;
     left: -0.3rem;
 }
 
@@ -207,8 +208,8 @@ hr.thr {
     right: -5rem; 
     width: 0;
     height: 0;
-    border-top: 18px solid transparent; 
-    border-bottom: 18px solid transparent; 
+    border-top: 15px solid transparent; 
+    border-bottom: 15px solid transparent; 
     border-left: 20px solid #00a782; 
     transform: translateY(-50%);
 }
@@ -247,12 +248,12 @@ hr.thr {
 .arrow-container-left {
     position: relative; 
     bottom: 13.5rem;
-    right: 3rem;
+    right: 2rem;
 }
 
 .line-left {
     position: absolute;
-    width: 160px;
+    width: 140px;
     height: 5px; 
     background-color: #00a782;
     left: 40rem;
@@ -263,11 +264,11 @@ hr.thr {
 .arrow-left {
     position: absolute;
     top: -25%;
-    right: 43rem; 
+    right: 8.5rem; 
     width: 0;
     height: 0;
     border-top: 15px solid transparent; 
     border-bottom: 15px solid transparent; 
     border-right: 20px solid #00a782; 
-    transform: translateY(-50%);
+    transform: translateY(-40%);
 }
