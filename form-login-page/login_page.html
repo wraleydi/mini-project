@@ -25,26 +25,7 @@
             </form>
         </div>
     </div>
-    <script>
-var currentTime = new Date().getHours();
-        if (currentTime >= 6 && currentTime < 18) {
-            // Pagi/Siang
-            document.body.classList.add('day-mode');
-        } else {
-            // Malam
-            document.body.classList.add('day-mode');
-        }
-
-        document.getElementById("login-form").addEventListener("submit", function(event) {
-    // Menghentikan perilaku default formulir
-            event.preventDefault();
-    
-    // Simulasi proses sign-up (contoh)
-    // Di sini Anda dapat menambahkan kode untuk memproses data sign-up menggunakan AJAX atau metode lainnya
-
-    // Redirect pengguna ke halaman login setelah sign-up berhasil
-            window.location.href = "content-page.html"; // Ganti dengan URL halaman login Anda
-});
+    <script src="login.js">
     </script>
 </body>
 </html>
