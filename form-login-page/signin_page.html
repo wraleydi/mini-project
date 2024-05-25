@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_signin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>sign-in</title>
+</head>
+<body>
+    <div class="page">
+        <div class="h1"><h1>Sign In</h1></div>
+        <div class="wrapper">
+            <form id="sign-in-form" action="/signin" method="post">
+                <div class="group">
+                    <input id="username" type="text" placeholder="Username" required>
+                </div>
+                <div class="group">
+                    <input id="email" type="email" placeholder="Email" required>
+                </div>
+                <div class="group">
+                    <input id="password" type="password" placeholder="Password" required>
+                </div>
+                <div class="group" type="submit"><button>Sign in</button></div>
+                <div class="or-container">
+                    <div class="or-text">or</div>
+                </div>
+                <!-- Tautan Login -->
+                <div class="col">
+                    <a href="https://www.facebook.com/login.php" target="_blank" class="fb-btn">
+                        <i class="fa fa-facebook fa-fw"></i>
+                    </a>
+                    <a href="https://twitter.com/login" target="_blank" class="twitter-btn">
+                        <i class="fa fa-twitter fa-fw"></i>
+                    </a>
+                    <a href="https://accounts.google.com/login" target="_blank" class="google-btn">
+                        <i class="fa fa-google fa-fw"></i>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        var currentTime = new Date().getHours();
+        if (currentTime >= 6 && currentTime < 18) {
+            // Pagi/Siang
+            document.body.classList.add('day-mode');
+        } else {
+            // Malam
+            document.body.classList.add('night-mode');
+        }
+
+        document.getElementById("sign-in-form").addEventListener("submit", function(event) {
+    // Menghentikan perilaku default formulir
+            event.preventDefault();
+    
+    // Simulasi proses sign-up (contoh)
+    // Di sini Anda dapat menambahkan kode untuk memproses data sign-up menggunakan AJAX atau metode lainnya
+
+    // Redirect pengguna ke halaman login setelah sign-up berhasil
+            window.location.href = "login_page.html"; // Ganti dengan URL halaman login Anda
+});
+    </script>
+</body>
+</html>
