@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="page">
+        <div class="h1"><h1>Log in</h1></div>
+        <div class="wrapper">
+            <form id="login-form" action="/login">
+                <div class="group">
+                    <input id="username" name="" type="text" placeholder="Username" required>
+                </div>
+                <div class="group">
+                    <input id="password" type="password" placeholder="Password" required>
+                </div>
+                <div class="group" type="submit"><button>Login</button></div>
+                <div class="group">
+                    <a id="link-p" href="#">Forgot password</a>
+                    <a id="link-s" href="#">sign in</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+var currentTime = new Date().getHours();
+        if (currentTime >= 6 && currentTime < 18) {
+            // Pagi/Siang
+            document.body.classList.add('day-mode');
+        } else {
+            // Malam
+            document.body.classList.add('day-mode');
+        }
+
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+    // Menghentikan perilaku default formulir
+            event.preventDefault();
+    
+    // Simulasi proses sign-up (contoh)
+    // Di sini Anda dapat menambahkan kode untuk memproses data sign-up menggunakan AJAX atau metode lainnya
+
+    // Redirect pengguna ke halaman login setelah sign-up berhasil
+            window.location.href = "content-page.html"; // Ganti dengan URL halaman login Anda
+});
+    </script>
+</body>
+</html>
