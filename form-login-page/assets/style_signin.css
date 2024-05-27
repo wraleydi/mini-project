@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS for morning */
+.day-mode {
+    background-image: url('background-morning.png');
+    color: black;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial;
+}
+
+.page h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.group {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.group input {
+    padding: 7px;
+    width: 190px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid rgb(226, 255, 94);
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.group button {
+    width: 100%;
+    padding: 7px;
+    margin-bottom: -10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(226, 255, 94);
+    box-shadow: 0 0 10px black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input::placeholder {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.group #link-s {
+    margin-right: -15px;
+    color: rgb(69, 181, 255);
+}
+
+/* CSS for night */
+.night-mode {
+    background-image: url('background-night.jpeg');
+    color: white; /* Warna teks untuk malam hari */
+}
+
+.night-mode input {
+    border-bottom: 3px solid black;
+}
+
+.night-mode h1 {
+    text-shadow: 2px 2px 10px rgba(240, 240, 235, 0.8);
+}
+
+.night-mode button {
+    background-color: rgb(103, 220, 255);
+}
+
+.night-mode button:hover {
+    box-shadow: 0 0 20px rgb(103, 220, 255);
+    transition: 0.5s;
+}
+
+.night-mode a {
+    color: white;
+}
+
+.or-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.or-text {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 0.5rem;
+    width: 200px;
+}
+
+.or-text::before, .or-text::after {
+    content: "";
+    width: 85px;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    display: block;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    color: white;
+}
+
+.col .fb-btn {
+    margin-right: 15px;
+    background-color: #08479b;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+}
+
+.col .fb-btn:hover {
+    box-shadow: 0 0 10px #083a7c;
+}
+
+.col .twitter-btn {
+    margin-right: 15px;
+    background-color: #1DA1F2;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+}
+
+.col .twitter-btn:hover {
+    box-shadow: 0 0 10px #1480c4;
+}
+
+.col .google-btn {
+    background-color: rgb(196, 4, 4);
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+}
+
+.col .google-btn:hover {
+    box-shadow: 0 0 10px rgb(158, 10, 10);
+}
