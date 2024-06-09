@@ -1,2 +1,2 @@
 # mini-project
-Berisi mini project hasil dari pembelajaran saya
+mini project/ project-project kecil
