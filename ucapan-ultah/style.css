@@ -1,3 +1,56 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    font-family: Anonymous Pro, sans-serif;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-image: url('Vintage\ aesthetic\ brown\ _\ light\ brown\ Note\ template.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    max-width: 400px;
+    width: 100%;
+}
+
+.love-card {
+    margin-block: auto;
+    cursor: pointer;
+}
+
+.description {
+    max-width: 200px;
+    width: 100%;
+}
+
+.content {
+    margin-block: auto;
+}
+
+.nav-arrow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-arrow button {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+}
+
 .fade-in {
     animation: fadeIn 1s forwards;
 }
@@ -15,3 +68,22 @@
     from { opacity: 1; }
     to { opacity: 0; }
 }
+
+#image-click {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
