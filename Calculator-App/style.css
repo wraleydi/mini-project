@@ -72,3 +72,11 @@ box-shadow: 0 0 20px white;
 #operator:hover {
     background: rgba(10, 10, 10, 0.363);
 }
+
+#equal {
+    background-color: rgb(214, 109, 10);
+}
+
+#equal:hover {
+    background-color: rgba(214, 109, 10, 0.562);
+}
