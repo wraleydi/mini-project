@@ -14,12 +14,12 @@ body {
 
 .kalkulator {
 background-color: rgb(31, 28, 28);
+box-shadow: 0 0 20px rgb(0, 0, 0);
 border-radius: 1rem;
 max-width: 500px;
 width: 500px;
 padding: 2rem;
 margin-block: auto;
-box-shadow: 0 0 20px white;
 }
 
 .display {
