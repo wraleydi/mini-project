@@ -1,11 +1,7 @@
 const display = document.getElementById('display');
 const buttons = document.querySelectorAll('.button');
 
-let inputNow = '';
-let inputPrev = '';
-let operator = '';
-let result = 0;
-let isResultShown = false;
+let expression = '';
 
 buttons.forEach(button => {
     button.addEventListener('click', function() {
@@ -22,44 +18,62 @@ buttons.forEach(button => {
         } else if (button.hasAttribute('data-koma')) {
             koma();
         } else if (button.hasAttribute('data-result')) {
-            handleEqual();
+            calculate();
         }
     });
 });
 
 function handleNumber(number) {
-    if (isResultShown) {
-        // Jika hasil sudah ditampilkan, mulai hitungan baru
-        clear();
-        isResultShown = false;
-    }
-    if (inputNow.length < 15) {
-        inputNow += number;
-        display.innerText = inputNow;
+    expression += number;
+    display.innerText = expression;
+}
+
+function handleOperator(op) {
+    if (expression !== '') {
+        // Ganti '*' dengan 'x' pada tampilan
+        if (op === '*') {
+            op = 'x';
+        }
+        expression += op;
+        display.innerText = expression;
     }
 }
 
 function handlePercent() {
-    if (!inputNow) return;
-    inputNow = (parseFloat(inputNow) / 100).toString();
-    display.innerText = inputNow + '%';
+    if (expression !== '') {
+        // Contoh implementasi untuk persentase
+        let result = eval(expression.replace(/x/g, '*')) / 100;
+        display.innerText = result.toString();
+        expression = result.toString(); // Simpan hasil sebagai ekspresi baru
+    }
 }
 
 function del() {
-    inputNow = inputNow.slice(0, -1);
-    if (inputNow === "") {
+    expression = expression.slice(0, -1);
+    if (expression === '') {
         display.innerText = '0';
     } else {
-        display.innerText = inputNow;
+        display.innerText = expression;
     }
 }
 
 function clear() {
-    inputNow = '';
-    inputPrev = '';
-    operator = '';
-    result = 0;
+    expression = '';
     display.innerText = '0';
-    isResultShown = false;
 }
 
+function koma() {
+    if (!expression.includes('.')) {
+        expression += '.';
+        display.innerText = expression;
+    }
+}
+
+function calculate() {
+    if (expression !== '') {
+        // Ganti 'x' dengan '*' saat dievaluasi
+        let result = eval(expression.replace(/x/g, '*'));
+        display.innerText = result.toString();
+        expression = result.toString(); // Simpan hasil sebagai ekspresi baru
+    }
+}
